@@ -1,5 +1,6 @@
 import 'package:akproject/pages/construct/construct.dart';
 import 'package:akproject/pages/home/home.dart';
+import 'package:akproject/pages/weapon/weapon_list.dart';
 import 'package:flutter/material.dart';
 
 class WeaponPage extends StatefulWidget {
@@ -21,9 +22,7 @@ class _WeaponPageState extends State<WeaponPage> {
           style: TextStyle(fontSize: 25),
         ),
       ),
-      body: Container(
-        child: Text('TEST'),
-      ),
+      body: WeaponList(),
       drawer: Drawer(
         child: ListView(
           children: [

@@ -16,12 +16,6 @@ class _HomePGRState extends State<HomePGR> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'PGR',
-          style: TextStyle(fontSize: 35),
-        ),
-      ),
       body: _goPage(),
     );
   }
