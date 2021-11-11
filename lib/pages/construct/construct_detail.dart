@@ -26,45 +26,26 @@ class _ConstructDetailState extends State<ConstructDetail> {
 
     var _pathPic;
 
-    _checkCons(){
-      if(construct.frame == 'Crimson Abyss')
-        return 'crim';
-      if(construct.frame == 'Entropy')
-        return 'ent';
-      if(construct.frame == 'Luminance')
-        return 'lumi';
-      if(construct.frame == 'Pulse')
-        return 'pul';
-      if(construct.frame == 'Ember')
-        return 'emb';
-      if(construct.frame == 'Tenebrion')
-        return 'ten';
-      if(construct.frame == 'Veritas')
-        return 'veri';
-      if(construct.frame == 'Dawn')
-        return 'dawn';
-      if(construct.frame == 'Lux')
-        return 'lux';
-      if(construct.frame == 'Palefire')
-        return 'pale';
-      if(construct.frame == 'Blast')
-        return 'bla';
-      if(construct.frame == 'Zero')
-        return 'zero';
-      if(construct.frame == 'Nightblade')
-        return 'night';
-      if(construct.frame == 'Bastion')
-        return 'bas';
-      if(construct.frame == 'Astral')
-        return 'ast';
-      if(construct.frame == 'Brilliance')
-        return 'zero';
-      if(construct.frame == 'Lotus')
-        return 'lot';
-      if(construct.frame == 'Eclipse')
-        return 'ecl';
-      if(construct.frame == 'Storm')
-        return 'storm';
+    _checkCons() {
+      if (construct.frame == 'Crimson Abyss') return 'crim';
+      if (construct.frame == 'Entropy') return 'ent';
+      if (construct.frame == 'Luminance') return 'lumi';
+      if (construct.frame == 'Pulse') return 'pul';
+      if (construct.frame == 'Ember') return 'emb';
+      if (construct.frame == 'Tenebrion') return 'ten';
+      if (construct.frame == 'Veritas') return 'veri';
+      if (construct.frame == 'Dawn') return 'dawn';
+      if (construct.frame == 'Lux') return 'lux';
+      if (construct.frame == 'Palefire') return 'pale';
+      if (construct.frame == 'Blast') return 'bla';
+      if (construct.frame == 'Zero') return 'zero';
+      if (construct.frame == 'Nightblade') return 'night';
+      if (construct.frame == 'Bastion') return 'bas';
+      if (construct.frame == 'Astral') return 'ast';
+      if (construct.frame == 'Brilliance') return 'zero';
+      if (construct.frame == 'Lotus') return 'lot';
+      if (construct.frame == 'Eclipse') return 'ecl';
+      if (construct.frame == 'Storm') return 'storm';
     }
 
     var _con = _checkCons();
@@ -87,16 +68,17 @@ class _ConstructDetailState extends State<ConstructDetail> {
               ],
             )),
         body: Container(
-            child: TabBarView(
-          children: [
-            _buildData(_pathPic, construct, construct.image),
-            _buildRed(_con, construct),
-            _buildYellow(_con, construct),
-            _buildBlue(_con, construct),
-            _buildSignature(_con, construct),
-            _buildCore(_con, construct),
-          ],
-        )),
+          child: TabBarView(
+            children: [
+              _buildData(_pathPic, construct, construct.image),
+              _buildRed(_con, construct),
+              _buildYellow(_con, construct),
+              _buildBlue(_con, construct),
+              _buildSignature(_con, construct),
+              _buildCore(_con, construct),
+            ],
+          ),
+        ),
       ),
     );
   }
@@ -104,12 +86,13 @@ class _ConstructDetailState extends State<ConstructDetail> {
   Widget _buildData(var path, Construct construct, var image) {
     return Container(
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
             'assets/images/$path/$image',
             fit: BoxFit.cover,
             width: 650,
-            height: 650,
+            height: construct.frame == 'Astral' || construct.frame == 'Brilliance' ? 800 : 650,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -124,6 +107,10 @@ class _ConstructDetailState extends State<ConstructDetail> {
               ),
               Text(
                 'Element: ${construct.element}',
+                style: TextStyle(fontSize: 32),
+              ),
+              Text(
+                'Affiliation: ${construct.affiliation}',
                 style: TextStyle(fontSize: 32),
               ),
             ],
@@ -151,7 +138,10 @@ class _ConstructDetailState extends State<ConstructDetail> {
             ),
             Padding(
               padding: const EdgeInsets.all(20),
-              child: Text('${construct.skill.redOrb}', style: TextStyle(fontSize: 27),),
+              child: Text(
+                '${construct.skill.redOrb}',
+                style: TextStyle(fontSize: 27),
+              ),
             )
           ],
         ),
@@ -177,7 +167,10 @@ class _ConstructDetailState extends State<ConstructDetail> {
             ),
             Padding(
               padding: const EdgeInsets.all(20),
-              child: Text('${construct.skill.yellowOrb}', style: TextStyle(fontSize: 27),),
+              child: Text(
+                '${construct.skill.yellowOrb}',
+                style: TextStyle(fontSize: 27),
+              ),
             )
           ],
         ),
@@ -203,7 +196,10 @@ class _ConstructDetailState extends State<ConstructDetail> {
             ),
             Padding(
               padding: const EdgeInsets.all(20),
-              child: Text('${construct.skill.blueOrb}', style: TextStyle(fontSize: 27),),
+              child: Text(
+                '${construct.skill.blueOrb}',
+                style: TextStyle(fontSize: 27),
+              ),
             )
           ],
         ),
@@ -229,7 +225,10 @@ class _ConstructDetailState extends State<ConstructDetail> {
             ),
             Padding(
               padding: const EdgeInsets.all(20),
-              child: Text('${construct.skill.ult}', style: TextStyle(fontSize: 27),),
+              child: Text(
+                '${construct.skill.ult}',
+                style: TextStyle(fontSize: 27),
+              ),
             )
           ],
         ),
@@ -255,7 +254,10 @@ class _ConstructDetailState extends State<ConstructDetail> {
             ),
             Padding(
               padding: const EdgeInsets.all(20),
-              child: Text('${construct.skill.core}', style: TextStyle(fontSize: 27),),
+              child: Text(
+                '${construct.skill.core}',
+                style: TextStyle(fontSize: 27),
+              ),
             )
           ],
         ),

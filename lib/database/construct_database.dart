@@ -22,6 +22,7 @@ class ConstructDatabase {
         core:
             'Any 3-Ping after a Blue 3-Ping causes you to fall back and enter Blade Will mode. Signal Orbs will be converted into Blade Will Orbs. In Blade Will mode, Signal Orbs gained by Basic Attacks will be converted into Blade Will Orbs. When pinging a Blade Will Orb, unleashes Sword Waves that deal 340% Physical DMG and gains Super Armor while unleashing.',
       ),
+      affiliation: 'Ascendant',
     ),
     Construct(
       rank: 'S',
@@ -42,6 +43,7 @@ class ConstructDatabase {
         core:
             'After any 3-Ping, pinging the next Red Orb will carry out consecutive shots that deal 55% Physical DMG per shot.',
       ),
+      affiliation: 'Gray Raven',
     ),
     Construct(
       rank: 'S',
@@ -62,6 +64,7 @@ class ConstructDatabase {
         core:
             'Has a 20% chance to trigger Light Penalty that deals 150% Physical DMG when hitting a marked enemy. After a 3-Ping or triggering Light Penalty 5 times, heals allies for 60% of Liv’s Attack.',
       ),
+      affiliation: 'Gray Raven',
     ),
     Construct(
       rank: 'S',
@@ -82,6 +85,7 @@ class ConstructDatabase {
         core:
             'Nanami enters Overclocking mode after using a Signature Move. Basic Attacks will deal Fire DMG and reduce Fire Resistance of the target by 15% for 8 seconds.',
       ),
+      affiliation: 'Unidentified',
     ),
     Construct(
       rank: 'S',
@@ -102,6 +106,7 @@ class ConstructDatabase {
         core:
             'When in combat, gains an additional 3% of Thermal Energy per skill level. Thermal Energy can be gained by 3-Pings and using Signature Moves. Becomes Enhanced after the thermal energy reaching 50%. Gains additional effects and 20% Fire DMG Bonus from Signal Orb skills and Basic Attacks. When Enhanced, loses 5% of Thermal Energy per second.',
       ),
+      affiliation: 'Engineering Force',
     ),
     Construct(
       rank: 'S',
@@ -122,6 +127,7 @@ class ConstructDatabase {
         core:
             'Consuming 3 orbs gains an additional 10 energy. Receive 15(30)% less physical damage and dark damage when in Dark mode.',
       ),
+      affiliation: 'Strike Hawk',
     ),
     Construct(
       rank: 'S',
@@ -142,6 +148,7 @@ class ConstructDatabase {
         core:
             'After a 3 red orb combo, consuming blue orbs will enter sniper mode. Basic attacks will fire off a long range penetrating lightning arrow, dealing 250(500)% lightning damage, exits sniper mode after 6 seconds, or successfully shooting 6 arrows. When dodging during sniper mode, the next basic attack will have a faster charge rate. Basic attacks no longer return orbs in sniper mode.',
       ),
+      affiliation: 'Purifying Force',
     ),
     Construct(
       rank: 'A',
@@ -162,6 +169,7 @@ class ConstructDatabase {
         core:
             'Lightning Lure: When attacking a marked enemy, based on the number of Marks on the enemy, there is 25%/50%/75% chance for the target to be struck with a 60% Lightning DMG Bolt.',
       ),
+      affiliation: 'Gray Raven',
     ),
     Construct(
       rank: 'A',
@@ -182,6 +190,7 @@ class ConstructDatabase {
         core:
             'When Basic Attacks hit marked enemies, there is a 30% chance to trigger Lightning Lure and deal 60% Lightning DMG. Red Orbs have 30% / 60% / 100% of chance to trigger Lightning Lure. After triggering 4 Lightning Lures, the next Lightning Lure will summon a Ex - Lightning Lure that deals 200% Lightning DMG and heals allies in the area for 40% of Lux’s attack.',
       ),
+      affiliation: 'Gray Raven',
     ),
     Construct(
       rank: 'A',
@@ -202,6 +211,7 @@ class ConstructDatabase {
         core:
             'After pinging a Yellow Orb, the next Red Orb skill will inflict Blast. Blast: Bullets explode after hitting the target, dealing 40% Fire DMG to enemies in an area.',
       ),
+      affiliation: 'Gray Raven',
     ),
     Construct(
       rank: 'A',
@@ -222,6 +232,7 @@ class ConstructDatabase {
         core:
             'After any 3-Ping, 1 energy arrow will be stored in the quiver (max 3 stored.) All arrows will be released when using the next Signature Move. Each energy arrow deals 100% Extra Physical DMG twice.',
       ),
+      affiliation: 'Purifying Force',
     ),
     Construct(
       rank: 'A',
@@ -242,6 +253,7 @@ class ConstructDatabase {
         core:
             'Karenina enters Burst mode after 3 times of any 3-ping or using a Signature Move. For the next 3 seconds, your Basic Attacks will become cannon shots that deal 80% Physical DMG per shot.',
       ),
+      affiliation: 'Engineering Force',
     ),
     Construct(
       rank: 'A',
@@ -262,6 +274,7 @@ class ConstructDatabase {
         core:
             'The final strike of each 3-Ping marks the target. Unleashes a shade to attack when marks reach 2 stacks. The shade lasts 5 seconds and will attack once with every Basic Attack. Shades deal 90% Physical DMG per attack.',
       ),
+      affiliation: 'The Forsaken',
     ),
     Construct(
       rank: 'A',
@@ -282,6 +295,7 @@ class ConstructDatabase {
         core:
             'Gain 40 charged energy on every 3 orb combo, up to a maximum of 120 energy. When the charged energy is above 0/40/80, deal 3(6)% more damage. Additionally, lose 8 charged energy per second in charged mode',
       ),
+      affiliation: 'Strike Hawk',
     ),
     Construct(
       rank: 'A',
@@ -302,6 +316,7 @@ class ConstructDatabase {
         core:
             "Upon using 3 orbs, then using a red orb, Watanabe turns into a shadow and slashes multiple times, each slash dealing 30% (60%) dark damage. Watanabe's normal attacks deal an additional 150% (300%) dark damage. Chase deals 50% (100%) dark damage",
       ),
+      affiliation: 'The Forsaken',
     ),
     Construct(
       rank: 'A',
@@ -322,6 +337,7 @@ class ConstructDatabase {
         core:
             'After a 3 orb combo, the next blue orb will trigger a charged attack that drags in enemies while charging. Grants a shield base on 8% of maximum health for 7 seconds and take 70% less damage from all sources while charging. After fully charging, attack with a heavy strike, dealing 350(700)% physical damage.',
       ),
+      affiliation: 'WGAA',
     ),
     Construct(
       rank: 'A',
@@ -342,6 +358,7 @@ class ConstructDatabase {
         core:
             "Sofia drops energy orbs upon 3 orb uses, QTE, ultimate, and finishing a normal attack. Energy orbs can be picked up, healing teammates by 10% (20%) of Sofia's attack power, and increase fire damage by 5% (10%). If Sofia picks up the energy orbs, she will gain 4 energy, and 75 heat. When heat values exceed 0/100/200, Sofia's damage increases by 5%/10%/15%.",
       ),
+      affiliation: 'Akdilek Commercial Alliance',
     ),
     Construct(
       rank: 'B',
@@ -362,6 +379,7 @@ class ConstructDatabase {
         core:
             'Pinging a Red Orb within 4 seconds of any 3-Ping will make Lucia enter Burst mode. Basic Attacks will be replaced with Dual Blades. Lotus - Dual Blades: Launches consecutive attacks at enemies, dealing 1080% Physical DMG in total.',
       ),
+      affiliation: 'Gray Raven',
     ),
     Construct(
       rank: 'B',
@@ -382,6 +400,7 @@ class ConstructDatabase {
         core:
             'After any 3-Ping, the next Red Orb skill will unleash laser beams that deal 800% Physical DMG.',
       ),
+      affiliation: 'Gray Raven',
     ),
     Construct(
       rank: 'B',
@@ -402,6 +421,7 @@ class ConstructDatabase {
         core:
             'Pinging a Yellow Orb after any 3-Ping will cause Nanami to use EX - Storm of Cuts and launch 8 consecutive attacks at nearby targets, dealing 100% Physical DMG per attack.',
       ),
+      affiliation: 'Unidentified',
     ),
   ];
 }

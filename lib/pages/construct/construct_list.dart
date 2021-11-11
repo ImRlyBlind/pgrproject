@@ -47,7 +47,7 @@ class _ConstructListState extends State<ConstructList> {
                                 ? 'assets/images/a_cons/${item.image}'
                                 : 'assets/images/b_cons/${item.image}',
                         width: 640,
-                        height: 400,
+                        height: item.frame == 'Astral' || item.frame == 'Brilliance' ? 800 : 550,
                         fit: BoxFit.cover,
                       ),
                     ),

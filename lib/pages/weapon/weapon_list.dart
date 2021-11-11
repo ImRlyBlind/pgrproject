@@ -1,4 +1,6 @@
-import 'package:akproject/model/weapon/weapon_image.dart';
+import 'package:akproject/database/weapon_database.dart';
+import 'package:akproject/model/weapon/weapon.dart';
+import 'package:akproject/pages/weapon/weapon_detail.dart';
 import 'package:flutter/material.dart';
 
 class WeaponList extends StatefulWidget {
@@ -9,26 +11,7 @@ class WeaponList extends StatefulWidget {
 }
 
 class _WeaponListState extends State<WeaponList> {
-  var _weapons = [
-    WeaponImage(name: 'Sakura', image: 'RedSakura.png'),
-    WeaponImage(name: 'Zero Scale', image: 'ZeroScale.png'),
-    WeaponImage(name: 'Dragon Wind', image: 'DragonWind.png'),
-    WeaponImage(name: 'Hydro Heat', image: 'HydroHeat.png'),
-    WeaponImage(name: 'Fusion Dragon', image: 'FusionDragon.png'),
-    WeaponImage(name: 'Darkness', image: 'Darkness.png'),
-    WeaponImage(name: 'Tonitrus', image: 'Tonitrus.png'),
-    WeaponImage(name: 'Inverse Shadow', image: 'InverseShadow.png'),
-    WeaponImage(name: 'Benediction', image: 'Benediction.png'),
-    WeaponImage(name: 'Wolf Fang', image: 'WolfFang.png'),
-    WeaponImage(name: 'Ramiel', image: 'Ramiel.png'),
-    WeaponImage(name: 'Soul Ripper', image: 'SoulRipper.png'),
-    WeaponImage(name: 'Big Kamui', image: 'Big_Kamui.png'),
-    WeaponImage(name: 'Peacemaker', image: 'Peacemaker.png'),
-    WeaponImage(name: 'Purple Peony', image: 'Big_Kamui.png'),
-    WeaponImage(name: 'Lotus Berserk', image: 'LotusBerserk.png'),
-    WeaponImage(name: 'Typer Zero', image: 'Type_Zero.png'),
-    WeaponImage(name: 'Inverse - Chimera', image: 'Chimera.png'),
-  ];
+  var _weapons = WeaponData().weapon;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +28,7 @@ class _WeaponListState extends State<WeaponList> {
 
           return Card(
             child: InkWell(
-              onTap: () {},
+              onTap: () => _handleClick(item),
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(
@@ -67,6 +50,14 @@ class _WeaponListState extends State<WeaponList> {
           );
         },
       ),
+    );
+  }
+
+  _handleClick(Weapon weapon) {
+    Navigator.pushNamed(
+      context,
+      WeaponDetail.routeName,
+      arguments: weapon,
     );
   }
 }

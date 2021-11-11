@@ -7,6 +7,7 @@ class Construct {
   final String element;
   final String image;
   final SkillAndCore skill;
+  final String affiliation;
 
   Construct({
     required this.rank,
@@ -15,5 +16,6 @@ class Construct {
     required this.element,
     required this.image,
     required this.skill,
+    required this.affiliation,
   });
 }

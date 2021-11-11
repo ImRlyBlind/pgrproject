@@ -5,6 +5,7 @@ class Weapon{
   final int crit;
   final String skill;
   final String rec;
+  final String image;
 
   Weapon({
     required this.type,
@@ -13,5 +14,6 @@ class Weapon{
     required this.crit,
     required this.skill,
     required this.rec,
+    required this.image,
   });
 }
