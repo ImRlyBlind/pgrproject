@@ -1,4 +1,5 @@
 import 'package:akproject/pages/construct/construct.dart';
+import 'package:akproject/pages/construct/construct_detail.dart';
 import 'package:akproject/pages/home/home.dart';
 import 'package:akproject/pages/weapon/weapon.dart';
 import 'package:flutter/material.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         HomePGR.routeName: (context) => const HomePGR(),
         ConstructPage.routeName: (context) => const ConstructPage(),
         WeaponPage.routeName: (context) => const WeaponPage(),
+        ConstructDetail.routeName: (context) => const ConstructDetail(),
       },
     );
   }

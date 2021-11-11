@@ -14,4 +14,24 @@ class SkillAndCore{
     required this.ult,
     required this.core
   });
+
+  /*String getRed(){
+    return redOrb;
+  }
+
+  String getBlue(){
+    return blueOrb;
+  }
+
+  String getYellow(){
+    return yellowOrb;
+  }
+
+  String getCore(){
+    return core;
+  }
+
+  String getUlt(){
+    return ult;
+  }*/
 }
