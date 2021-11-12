@@ -18,6 +18,7 @@ class _ConstructPageState extends State<ConstructPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black.withAlpha(100),
         title: Text(
           'Construct',
           style: TextStyle(fontSize: 25),

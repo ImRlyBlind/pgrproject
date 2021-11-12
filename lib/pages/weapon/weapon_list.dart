@@ -20,7 +20,7 @@ class _WeaponListState extends State<WeaponList> {
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
           crossAxisSpacing: 10,
-          childAspectRatio: 0.64,
+          childAspectRatio: 1,
         ),
         itemCount: _weapons.length,
         itemBuilder: (BuildContext context, int index) {
@@ -37,8 +37,6 @@ class _WeaponListState extends State<WeaponList> {
                       padding: const EdgeInsets.symmetric(vertical: 20),
                       child: Image.asset(
                         'assets/images/weapon/${item.image}',
-                        width: 640,
-                        height: 400,
                         fit: BoxFit.cover,
                       ),
                     ),

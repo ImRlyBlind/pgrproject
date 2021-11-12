@@ -42,7 +42,8 @@ class _ConstructDetailState extends State<ConstructDetail> {
       if (construct.frame == 'Nightblade') return 'night';
       if (construct.frame == 'Bastion') return 'bas';
       if (construct.frame == 'Astral') return 'ast';
-      if (construct.frame == 'Brilliance') return 'zero';
+      if (construct.frame == 'Brilliance') return 'bri';
+      if (construct.frame == 'Silverfang') return 'sil';
       if (construct.frame == 'Lotus') return 'lot';
       if (construct.frame == 'Eclipse') return 'ecl';
       if (construct.frame == 'Storm') return 'storm';
@@ -58,6 +59,7 @@ class _ConstructDetailState extends State<ConstructDetail> {
       length: _tabBar.length,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.grey,
             title: Text(construct.name + ' - ' + construct.frame),
             bottom: TabBar(
               tabs: [
@@ -68,6 +70,7 @@ class _ConstructDetailState extends State<ConstructDetail> {
               ],
             )),
         body: Container(
+          color: Colors.grey,
           child: TabBarView(
             children: [
               _buildData(_pathPic, construct, construct.image),
@@ -91,8 +94,8 @@ class _ConstructDetailState extends State<ConstructDetail> {
           Image.asset(
             'assets/images/$path/$image',
             fit: BoxFit.cover,
-            width: 650,
-            height: construct.frame == 'Astral' || construct.frame == 'Brilliance' ? 800 : 650,
+            //width: 650,
+            //height: construct.frame == 'Astral' || construct.frame == 'Brilliance' ? 590 : 650,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -214,7 +217,7 @@ class _ConstructDetailState extends State<ConstructDetail> {
         child: Column(
           children: [
             Image.asset(
-              'assets/skill/${gif}_sig.png',
+              'assets/skill/sad_kamui.png',// ?? 'assets/skill/${gif}_sig.png',
               fit: BoxFit.cover,
               width: 220,
               height: 220,
@@ -228,6 +231,14 @@ class _ConstructDetailState extends State<ConstructDetail> {
               child: Text(
                 '${construct.skill.ult}',
                 style: TextStyle(fontSize: 27),
+              ),
+            ),
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text('Sad Kamui has been shown because the dev cannot find the image'),
+                ],
               ),
             )
           ],
@@ -243,7 +254,7 @@ class _ConstructDetailState extends State<ConstructDetail> {
         child: Column(
           children: [
             Image.asset(
-              'assets/skill/${gif}_core.png',
+              'assets/skill/sad_kamui.png',// ?? 'assets/skill/${gif}_sig.png',
               fit: BoxFit.cover,
               width: 220,
               height: 220,
@@ -258,7 +269,15 @@ class _ConstructDetailState extends State<ConstructDetail> {
                 '${construct.skill.core}',
                 style: TextStyle(fontSize: 27),
               ),
-            )
+            ),
+            Expanded(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text('Sad Kamui has been shown because the dev cannot find the image.'),
+                ],
+              ),
+            ),
           ],
         ),
       ),

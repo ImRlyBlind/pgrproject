@@ -31,6 +31,7 @@ class _WeaponDetailState extends State<WeaponDetail> {
       length: _tab.length,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.red.withAlpha(100),
           title: Text(weapons.name),
           bottom: TabBar(
             tabs: [
@@ -62,8 +63,6 @@ class _WeaponDetailState extends State<WeaponDetail> {
           Image.asset(
             'assets/images/weapon/${_weapon.image}',
             fit: BoxFit.cover,
-            width: 400,
-            height: 400,
           ),
           Center(
             child: Column(
@@ -102,9 +101,9 @@ class _WeaponDetailState extends State<WeaponDetail> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text('Skill 1\n${_reso.reso1}', style: TextStyle(fontSize: 32), textAlign: TextAlign.center),
-            Text('Skill 2\n${_reso.reso2}', style: TextStyle(fontSize: 32), textAlign: TextAlign.center),
-            Text('Skill 3\n${_reso.reso3}', style: TextStyle(fontSize: 32), textAlign: TextAlign.center),
+            Text('Skill 1:\n${_reso.reso1}', style: TextStyle(fontSize: 32), textAlign: TextAlign.center),
+            Text('Skill 2:\n${_reso.reso2}', style: TextStyle(fontSize: 32), textAlign: TextAlign.center),
+            Text('Skill 3:\n${_reso.reso3}', style: TextStyle(fontSize: 32), textAlign: TextAlign.center),
           ],
         ),
       ),

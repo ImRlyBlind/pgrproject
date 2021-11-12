@@ -23,14 +23,12 @@ class _HomePGRState extends State<HomePGR> {
   Container _buildContainer() {
     return Container(
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage('assets/images/pgr_home.jpeg'),
-          fit: BoxFit.cover,
-        )
-
-      ),
+          image: DecorationImage(
+        image: AssetImage('assets/images/pgr_home.jpeg'),
+        fit: BoxFit.cover,
+      )),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
             'Welcome To PGR',
@@ -43,32 +41,29 @@ class _HomePGRState extends State<HomePGR> {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(20),
-                  child: Card(
-                    color: Colors.grey,
-                    child: InkWell(
-                      child: Text(
-                        'Construct',
-                        style: TextStyle(fontSize: 25),
+                  child: InkWell(
+                    child: Text(
+                      'Construct',
+                      style: TextStyle(
+                        fontSize: 25,
+                        color: Colors.white,
                       ),
-                      onTap: () {
-                        _setPage(1);
-                      },
                     ),
+                    onTap: () {
+                      _setPage(1);
+                    },
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(20),
-                  child: Card(
-                    color: Colors.grey,
-                    child: InkWell(
-                      child: Text(
-                        'Weapon',
-                        style: TextStyle(fontSize: 25),
-                      ),
-                      onTap: () {
-                        _setPage(2);
-                      },
+                  child: InkWell(
+                    child: Text(
+                      'Weapon',
+                      style: TextStyle(fontSize: 25),
                     ),
+                    onTap: () {
+                      _setPage(2);
+                    },
                   ),
                 ),
               ],

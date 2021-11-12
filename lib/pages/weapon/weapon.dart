@@ -17,6 +17,7 @@ class _WeaponPageState extends State<WeaponPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.red.withAlpha(100),
         title: Text(
           'Weapon',
           style: TextStyle(fontSize: 25),

@@ -17,19 +17,16 @@ class _ConstructListState extends State<ConstructList> {
   @override
   Widget build(BuildContext context) {
 
-    //print(_conlist);
     return Scaffold(
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 3,
           crossAxisSpacing: 10,
-          childAspectRatio: 0.64,
+          childAspectRatio: 0.57,
         ),
         itemCount: _conlist.length,
         itemBuilder: (BuildContext context, int index) {
           var item = _conlist[index];
-
-
 
           return Card(
             child: InkWell(
@@ -46,15 +43,18 @@ class _ConstructListState extends State<ConstructList> {
                             : item.rank == 'A'
                                 ? 'assets/images/a_cons/${item.image}'
                                 : 'assets/images/b_cons/${item.image}',
-                        width: 640,
-                        height: item.frame == 'Astral' || item.frame == 'Brilliance' ? 800 : 550,
+                        //width: 640,
+                        //height: item.frame == 'Astral' || item.frame == 'Brilliance' ? 640 : 550,
                         fit: BoxFit.cover,
                       ),
                     ),
                     SizedBox(width: 8),
-                    Text(
-                      '${item.name} Rank ${item.rank}',
-                      style: TextStyle(fontSize: 30),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        '${item.name} Rank ${item.rank}',
+                        style: TextStyle(fontSize: 30),
+                      ),
                     )
                   ],
                 ),
