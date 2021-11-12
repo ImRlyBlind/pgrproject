@@ -117,11 +117,11 @@ class ConstructDatabase {
       skill: SkillAndCore(
         frame: 'Tenebrion',
         redOrb:
-            'Normal Mode: Cross slash the target, dealing 100/200/300(200/400/600)% of physical damage and an additional 20/40/60(40/80/120)% of dark damage.\nDark mode: Leap forward to an enemy, dealing 400/800/1200(800/1600/2400)% of dark damage.',
+            'Normal Mode: Cross slash the target, dealing 100/200/300(200/400/600)% of physical damage and an additional 20/40/60(40/80/120)% of dark damage.\n\nDark mode: Leap forward to an enemy, dealing 400/800/1200(800/1600/2400)% of dark damage.',
         blueOrb:
-            'Normal Mode: Spin your sword and deal 70/140/210(140/280/420)% physical damage and an additional 20/40/60(40/80/120)% of dark damage.The spin will also draw enemies towards you.\nDark mode: Crush the ground and release energy in a fan shape, dealing 240/480/720(480/960/1440)% of dark damage and stunning the target.',
+            'Normal Mode: Spin your sword and deal 70/140/210(140/280/420)% physical damage and an additional 20/40/60(40/80/120)% of dark damage.The spin will also draw enemies towards you.\n\nDark mode: Crush the ground and release energy in a fan shape, dealing 240/480/720(480/960/1440)% of dark damage and stunning the target.',
         yellowOrb:
-            'Normal Mode: Rush towards an enemy, dealing 75/150/225(150/300/450)% of physical damage and an additional 20/40/60(40/80/120)% dark damage. During the rush, you take 30% less damage and is immune to crowd control.\nDark Mode: Rush and swing your sword around, dealing 300/600/900(600/1200/1800)% of dark damage. During the rush, you take 30% less damage and is immune to crowd control.',
+            'Normal Mode: Rush towards an enemy, dealing 75/150/225(150/300/450)% of physical damage and an additional 20/40/60(40/80/120)% dark damage. During the rush, you take 30% less damage and is immune to crowd control.\n\nDark Mode: Rush and swing your sword around, dealing 300/600/900(600/1200/1800)% of dark damage. During the rush, you take 30% less damage and is immune to crowd control.',
         ult:
             'Dark mode can be activated when energy is above 60, all skill will be changed and Kamui gains Anti-CC. 8 energy is depleted per second in Dark mode, exit Dark mode when energy is depleted. Dark damage is increased by 10(20)% when in Dark mode',
         core:

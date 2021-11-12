@@ -70,5 +70,4 @@ class _ConstructPageState extends State<ConstructPage> {
       ],
     );
   }
-
 }
